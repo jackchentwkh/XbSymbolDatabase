@@ -113,6 +113,7 @@
 //   * D3DDevice_InsertCallback (4034, 4039)
 //   * D3DDevice_InsertFence (4034)
 //   * D3DDevice_IsFencePending (4034)
+//   * D3DDevice_KickOff (5455,5849)
 //   * D3DDevice_KickPushBuffer (4034)
 //   * D3DDevice_LoadVertexShaderProgram (4034)
 //   * D3DDevice_PersistDisplay (4034)
@@ -361,6 +362,7 @@ OOVPATable D3D8_OOVPA[] = {
     REGISTER_OOVPAS(D3DDevice_SetTextureState_TexCoordIndex, 3911, 4034, 4242, 4627),
     REGISTER_OOVPAS(D3DDevice_SetTile, 3911, 4034, 4627), // Then it has changed calls ?SetTileNoWait@D3D@@YGXKPBU_D3DTILE@@@Z in XDK 4627 and higher.
     REGISTER_OOVPAS(D3DDevice_SetTransform, 3911, 4034, 5344, 5558), // Was 4134 (from 5344's comment)
+    REGISTER_OOVPAS(D3D_UpdateProjectionViewportTransform, 3911, 4034), // verified with Azurik 3911, Dark Summit 4034, Otogi 5455, NHL HITZ Pro 2004 5558, Midway Arcade Treasures Paperboy 5659, Otogi2 5849
     REGISTER_OOVPAS(D3DDevice_MultiplyTransform, 3911, 4034), // TODO: Verify 4034 is correct
     REGISTER_OOVPAS(D3DDevice_SetVertexData2f, 3911, 4039), // Was 4627 (from 5344's comment)
     REGISTER_OOVPAS(D3DDevice_SetVertexData2s, 3911, 4039),
